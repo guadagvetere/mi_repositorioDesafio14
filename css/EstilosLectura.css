@@ -1,0 +1,143 @@
+@charset "UTF-8";
+/* CSS Document */
+/*background*/
+.body {
+  background-image: url("../Imagen/AdobeStock_328586747.jpeg"); }
+
+/*SAAS*/
+/*Header*/
+.TituloHeader {
+  color: #22AE8E;
+  font-family: 'averia-gruesa-libre';
+  font-weight: 400;
+  font-size: 50px;
+  font-style: normal;
+  display: inline; }
+
+.Subtitulo {
+  color: #CE3E93;
+  font-family: 'averia-sans-libre';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  transform: translateY(-30px); }
+
+.ParrafoHeader {
+  color: #000000;
+  font-family: 'averia-sans-libre';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px; }
+
+.nav-item {
+  font-family: "averia-sans-libre";
+  font-style: normal;
+  text-align: start;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  position: sticky;
+  transform: translateY(-50px); }
+
+.nav-link {
+  color: #068A96;
+  display: block;
+  padding-left: 5px; }
+
+/*Títulos*/
+.TituloPrincipal {
+  font-family: "averia-gruesa-libre";
+  color: #22AE8E;
+  font-size: 30px;
+  text-align: center;
+  animation-duration: 4s;
+  animation-name: titulo;
+  animation-iteration-count: 1;
+  animation-direction: normal; }
+
+@keyframes titulo {
+  0% {
+    opacity: 0; }
+  100% {
+    opacty: 1; } }
+
+/*Contenido*/
+.parrafos, .parrafo__articulo {
+  font-family: 'averia-serif-libre';
+  color: #032F2F;
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px; }
+
+.parrafo__articulo {
+  font-size: 17px; }
+
+.parrafoIntro {
+  margin: 30px;
+  padding: 15px;
+  border: double #CE3E93 5px; }
+
+.contenidoImagenes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+  transform: translateX(80px); }
+
+.articulo__primero--borde {
+  margin: 30px;
+  padding: 15px;
+  border: double #22AE8E 5px; }
+
+.articulo__titulo {
+  font-family: "averia-gruesa-libre";
+  color: #22AE8E;
+  font-size: 25px;
+  text-align: center; }
+
+/*Formulario, tablas y listas*/
+.Formulario {
+  font-family: "averia-serif-libre";
+  color: #032F2F;
+  text-align: center;
+  font-size: 15px; }
+
+#tituloFormulario {
+  font-family: "averia-serif-libre";
+  color: #22AE8E;
+  text-align: center;
+  font-size: 25px; }
+
+.cajaFormulario {
+  margin: 25px;
+  padding: 20px;
+  border: double #CE3E93 5px; }
+
+.columna {
+  font-family: "averia-serif-libre";
+  color: #22AE8E;
+  text-align: center;
+  font-size: 15px; }
+
+.egt {
+  font-family: "averia-serif-libre";
+  color: #032F2F;
+  text-align: center;
+  font-size: 15px; }
+
+/*Paginacion*/
+.page-link {
+  font-family: "averia-sans-libre";
+  color: #22AE8E; }
+
+.true {
+  font-family: "averia-sans-libre";
+  color: #22AE8E; }
+
+/*Footer*/
+.footer {
+  color: #032F2F;
+  font-family: "averia-serif-libre";
+  font-style: normal;
+  font-weight: 300; }

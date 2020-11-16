@@ -1,0 +1,216 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*background*/ 
+.body {
+	background-image: url("../Imagen/AdobeStock_328586747.jpeg");
+}
+
+/*SAAS*/ 
+@mixin colorTitulos {
+
+color: #22AE8E;
+
+}
+
+@mixin colorMenu {
+
+color: #068A96;
+
+}
+
+@mixin colorParrafos {
+
+color: #032F2F;
+
+}
+
+@mixin colorParrafos {
+
+color: #032F2F;
+
+}
+
+@mixin colorRosita {
+
+color: #CE3E93;
+
+}
+
+@mixin colorNegro {
+
+color: #000000;
+
+}
+
+@mixin colorTurquesa {
+
+color: #22AE8E;
+
+}
+
+
+/*Header*/
+.TituloHeader {
+	@include colorTitulos;
+    font-family: 'averia-gruesa-libre';
+	font-weight: 400;
+    font-size: 50px;
+    font-style: normal;
+	display: inline;
+}
+
+.Subtitulo {
+    @include colorRosita;
+	font-family: 'averia-sans-libre';
+	font-style: normal;
+    font-weight: 400;
+	font-size: 30px;
+	transform: translateY(-30px);
+}
+.ParrafoHeader {
+    @include colorNegro;
+    font-family: 'averia-sans-libre';
+    font-style: normal;
+    font-weight: 300;
+	font-size: 20px;
+}
+	
+.nav-item {
+
+	font-family: "averia-sans-libre";
+	font-style: normal;
+	text-align: start;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	position: sticky;
+	transform: translateY(-50px);	
+}
+
+.nav-link {
+	@include colorMenu;
+	display: block;
+	padding-left: 5px;
+}
+
+
+/*Títulos*/ 
+.TituloPrincipal {
+	font-family: "averia-gruesa-libre";
+	@include colorTitulos;
+	font-size: 30px;
+	text-align: center;
+	animation-duration: 4s;
+	animation-name: titulo;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+}
+
+@keyframes titulo {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacty: 1;
+	}
+}
+ 
+/*Contenido*/
+.parrafos {
+    font-family: 'averia-serif-libre';
+    @include colorParrafos;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.parrafo__articulo {
+
+@extend .parrafos;
+
+font-size: 17px;
+
+}
+
+.parrafoIntro {
+	margin: 30px;
+	padding: 15px;
+	border: double #CE3E93 5px;
+}
+
+.contenidoImagenes {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+	transform: translateX(80px);
+}
+
+.articulo__primero--borde {
+	margin: 30px;
+	padding: 15px;
+	border: double #22AE8E 5px;
+}	
+.articulo__titulo {
+	font-family: "averia-gruesa-libre";
+	@include colorTitulos;
+	font-size: 25px;
+	text-align: center;
+}
+	
+
+ 
+/*Formulario, tablas y listas*/ 
+.Formulario {
+	font-family: "averia-serif-libre";
+	@include colorParrafos;
+	text-align: center;
+	font-size: 15px;
+}
+#tituloFormulario {
+	font-family: "averia-serif-libre";
+	@include colorTurquesa;
+	text-align: center;
+	font-size: 25px;
+}
+
+.cajaFormulario {
+	margin: 25px;
+	padding: 20px;
+	border: double #CE3E93 5px;
+	
+	
+}
+.columna {
+	font-family: "averia-serif-libre";
+	@include colorTurquesa;
+	text-align: center;
+	font-size: 15px; 
+}
+.egt {
+	font-family: "averia-serif-libre";
+	@include colorParrafos;
+	text-align: center;
+	font-size: 15px; 
+	
+}
+
+/*Paginacion*/
+.page-link {
+	font-family: "averia-sans-libre";
+	@include colorTurquesa;
+}
+
+.true {
+	font-family: "averia-sans-libre";
+	@include colorTurquesa;
+}
+/*Footer*/ 
+.footer {
+    @include colorParrafos;
+	font-family: "averia-serif-libre";
+    font-style: normal;
+    font-weight: 300;
+}
